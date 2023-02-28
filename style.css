@@ -1,0 +1,271 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+*
+{font-family: 'Pacifico', cursive;}
+body{
+    background-color: rgb(10, 7, 1);
+    color: rgb(255, 255, 255);
+    
+}
+
+a{
+    text-decoration: none;
+}
+.linkkk{
+    color: rgb(255, 0, 0);
+}
+
+.hi {
+    width: 10%;
+    margin: 10px; 
+    border-radius: 20px;
+    background-origin: padding-box;
+}
+
+.menu {
+    float: right;
+    text-align: center;
+}
+.content {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    object-position: 850px;
+}
+a{
+    list-style: none;
+    margin-left: 20px;
+    margin-left: 20px;
+}
+
+p.txt {
+    font-size: xx-large;   
+}
+header{
+    background-color: #5579df;
+    border-radius: 25px;
+    position: sticky;
+    padding-left:150px;
+    padding: 20px;
+    margin: 20px;
+}
+footer{
+    background-color: red;
+    text-align: center;
+    border-radius: 5px;
+    color: aliceblue;
+    padding: 25px 0;
+    margin-top:20
+}
+nav{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    color:black ;
+    position: relative;
+
+}
+nav ul li a::after{
+    background:linear-gradient(to left,black,rgb(245, 245, 245)) ;
+    position:absolute;
+    bottom:-5px;
+    height: 3px;
+    width: 3px;
+    content: '';
+    right:0;
+    left:0;
+    transition:width .6s;
+}
+nav ul li a:hover::after{
+    width :100%;
+}
+
+
+#aboutmain{
+    padding:70px 0 90px 70px;
+    color:rgb(209, 12, 12);
+    margin-bottom: 20px;
+}
+
+.aboutsection{
+    padding:10px 10%;
+}
+
+.aboutrow{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap:nowrap ;
+}
+.about-col-1{
+    flex-basis: 50%;
+    margin-right: 80px;
+    margin-left: -50px;
+    margin-top: 5%;
+}
+.about-col-1 img{
+    width:200px;
+}
+.tab-links-active-links::after{
+    width: "100%"
+}
+.tab-content ul li{
+    list-style:none;
+    margin:10px 0;
+}
+.tab-content ul li span{
+    color:black;
+    font-size: 14px;
+}
+.tab-content{
+    display: none;
+}
+.tab-contents.active-tab{
+    display:block;
+}
+
+/*------------------------------portfolio-------------------------------------*/
+#portfolio-main{
+    padding: 10px 0;
+}
+.portfolio-section{
+    padding:10px 10%;
+}
+.portfolio-title{
+    font-size: 50px;
+    font-weight: 600;
+    color:rgb(86, 84, 84);
+
+}
+
+.portfolio-work-list{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    margin-bottom: 90px;
+}
+.portfolio{
+    border-radius: 10px;
+    position:relative;
+    overflow: hidden;
+}
+.portfolio img{
+    width:100%;
+    border-radius: 10px;
+    display:block;
+    transition: transform 0.5s;
+}
+.layer{
+    width:100px;
+    height: 0;
+    background:linear-gradient(rgb(221, 31, 31),grey);
+    border-radius: 10px;
+    position:absolute;
+    left: 0;
+    bottom:0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding:0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 700;
+    margin-bottom: 20px;
+    color:aqua;
+}
+.layer p{
+    color:aqua;
+}
+.layer a{
+    margin-top: 60px;
+    color:blueviolet;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: white;
+    width: 50px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.portfolio:hover img{
+    transform: scale(1,1);
+}
+.portfolio:hover .layer{
+    height:100%;
+}
+.btn{
+    display:block;
+    margin: 50px auto;
+    width: fit-content ;
+    border: 1px solid rgb(148, 129, 223);
+    padding: 10px 20px;
+    margin-left: 5px;
+    margin-top: 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    background: aqua;
+    color: grey;
+}
+
+/*------------------------------contact me--------------------*/
+.contact-row{
+    margin-top: 55px;
+    display:flex;
+    justify-content: left;
+    flex-wrap: nowrap;
+    margin-left:150px;
+}
+.contact-left{
+    margin-top: 50px;
+    flex-basis:25%;
+}
+.contact-sub-title{
+    font-size: 50px;
+    font-weight: 600;
+    color: red;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: blueviolet;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: rgb(86, 6, 160);
+
+}
+.social-icons a :hover{
+    transform: translateY();
+}
+.contactform {
+    background-color: aliceblue;
+    margin-right: 10000px;
+
+}
